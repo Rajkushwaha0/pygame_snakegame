@@ -1,3 +1,4 @@
+"""before executing make a txt a file in same folder of name "raj" and write 30 or whatever value you want to initialize as high score"""
 #by pygame
 import pygame
 import random
@@ -136,5 +137,6 @@ def gameloop():
     pygame.quit()
     quit()
 welcome()
+#to win press z😂
 
 
