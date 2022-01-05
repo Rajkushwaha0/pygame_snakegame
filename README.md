@@ -1,4 +1,3 @@
-"""before executing make a txt a file in same folder of name "raj" and write 30 or whatever value you want to initialize as high score"""
 #by pygame
 import pygame
 import random
@@ -10,17 +9,13 @@ black = (0, 0, 0)
 r=(255,235,205)
 aqua=(0,255,255)
 
-# Creating window
+
 screen_width = 900
 screen_height = 600
 gameWindow = pygame.display.set_mode((screen_width, screen_height))
 
 pygame.display.set_caption("My First Game")
 pygame.display.update()
-
-#variables
-
-
 clock = pygame.time.Clock()
 font = pygame.font.SysFont(None, 55)
 
@@ -47,7 +42,7 @@ def welcome():
         pygame.display.update()
         clock.tick(60) 
 
-# Game Loop
+
 def gameloop():
     exit_game = False
     game_over = False
@@ -116,7 +111,6 @@ def gameloop():
             gameWindow.fill(aqua)
             text("Score: " + str(score)+" highscore:"+str(raj), r,4, 4)
             pygame.draw.rect(gameWindow, red, [foodx, foody, size, size])
-            #pygame.draw.rect(gameWindow, black, [snake_x, snake_y, size, size])
             head = []
             head.append(snake_x)
             head.append(snake_y)
@@ -138,5 +132,3 @@ def gameloop():
     quit()
 welcome()
 #to win press z😂
-
-
